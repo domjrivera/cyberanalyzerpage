@@ -11,7 +11,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-6xl px-6">
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/5 px-4 py-1.5 text-sm text-cyan-300/90">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            PhD-led research · AI & data analysis
+            D.Eng.-led research · AI & data analysis
           </p>
 
           <h1 className="max-w-4xl font-serif text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl md:text-6xl">
@@ -75,9 +75,9 @@ export default function Home() {
             </div>
             <div className="space-y-6 rounded-2xl border border-white/5 bg-[#0a0e14] p-8">
               <p className="text-slate-300 leading-relaxed">
-                Led by a PhD researcher with direct, hands-on research experience, we bring
-                academic depth to product delivery: reproducible methods, clear assumptions, and
-                software people actually use.
+                Led by a Doctor of Engineering (D.Eng.) with direct, hands-on research
+                experience, we bring academic depth to product delivery: reproducible methods,
+                clear assumptions, and software people actually use.
               </p>
               <ul className="space-y-3 text-sm text-slate-400">
                 <li className="flex gap-3">

@@ -48,7 +48,7 @@ export const capabilities = [
   {
     title: "Custom Research & Development",
     description:
-      "Partner on bespoke projects: novel methods, prototypes, and production systems built with PhD-level depth and delivery focus.",
+      "Partner on bespoke projects: novel methods, prototypes, and production systems built with doctoral-level depth and delivery focus.",
     icon: "flask",
   },
 ] as const;
