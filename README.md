@@ -40,7 +40,7 @@ npx serve out
 | Setup | Configuration |
 |--------|----------------|
 | **User/org site** (`username.github.io`) | No base path; site is served at `/`. |
-| **Project site** (`github.com/user/repo`) | CI sets `NEXT_PUBLIC_BASE_PATH=/repo` automatically. |
+| **Project site** (`github.com/user/repo`) | CI sets `NEXT_PUBLIC_BASE_PATH=/repo` unless `public/CNAME` exists (custom domain → root). |
 | **Custom domain** (e.g. `cyberanalyzer.com`) | Add a `CNAME` file in `public/` and configure DNS + Pages custom domain in GitHub. |
 
 ### Custom domain
