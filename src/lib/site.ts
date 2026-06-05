@@ -4,7 +4,7 @@ export const site = {
   description:
     "Research-driven AI and data analysis for governance, cybersecurity, creative tools, sports analytics, and beyond.",
   email: "contact@cyberanalyzer.com",
-  url: "https://www.cyberanalyzer.com",
+  url: "https://cyberanalyzer.com",
 } as const;
 
 export const navLinks = [
