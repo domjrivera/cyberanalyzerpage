@@ -9,6 +9,14 @@ export default function Home() {
         <div className="pointer-events-none absolute left-1/2 top-0 h-[480px] w-[720px] -translate-x-1/2 glow-orb" aria-hidden />
 
         <div className="relative mx-auto max-w-6xl px-6">
+          <img
+            src="/logo.png"
+            alt="Cyber Analyzer"
+            className="mb-5 h-20 w-auto sm:h-24"
+            height={96}
+            width={75}
+          />
+
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/5 px-4 py-1.5 text-sm text-cyan-300/90">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse" />
             D.Eng.-led research · AI & data analysis

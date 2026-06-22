@@ -12,22 +12,15 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link
           href="/"
-          className="group flex items-center gap-2 font-semibold tracking-tight text-white"
+          className="group flex items-center gap-3 font-semibold tracking-tight text-white"
         >
-          <span
-            className="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-br from-cyan-500/20 to-teal-600/30 ring-1 ring-cyan-400/30"
-            aria-hidden
-          >
-            <svg
-              viewBox="0 0 24 24"
-              className="h-4 w-4 text-cyan-400"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-          </span>
+          <img
+            src="/logo-icon.png"
+            alt=""
+            className="h-8 w-auto"
+            height={32}
+            width={29}
+          />
           <span className="hidden sm:inline">{site.name}</span>
           <span className="sm:hidden">Cyber Analyzer</span>
         </Link>
