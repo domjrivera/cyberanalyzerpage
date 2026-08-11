@@ -8,11 +8,12 @@ export const site = {
 } as const;
 
 export const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#capabilities", label: "Capabilities" },
-  { href: "#portfolio", label: "Labs & Portfolio" },
-  { href: "#approach", label: "Approach" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#capabilities", label: "Capabilities" },
+  { href: "/tools", label: "Tools" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/articles", label: "Insights" },
+  { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const capabilities = [
@@ -36,6 +37,19 @@ export const capabilities = [
   },
 ] as const;
 
+export const tools = [
+  {
+    title: "Regulatory Readiness Analysis Tools",
+    slug: "regulatory-readiness",
+    description: "Automated assessment frameworks to test and prepare enterprise operations against emerging state and federal compliance mandates before regulatory audits.",
+  },
+  {
+    title: "Risk Management Dashboards",
+    slug: "risk-dashboards",
+    description: "Executive-level visibility platforms that synthesize threat intelligence, compliance gaps, and operational metrics into defensible, real-time risk postures.",
+  },
+];
+
 export const portfolio = [
   {
     title: "Regulatory Modernization Analytics",
@@ -45,11 +59,25 @@ export const portfolio = [
     link: null,
   },
   {
-    title: "LitVille & TrialCounsel",
+    title: "CyberForensix",
+    category: "Digital Forensics",
+    description:
+      "The AI-driven digital forensics platform for forward-thinking law enforcement and intelligence agencies. Built to process, structure, and analyze digital evidence 10x faster under rigorous evidentiary standards.",
+    link: "https://cyberforensix.com",
+  },
+  {
+    title: "TrialCounsel Research Assistant",
     category: "Legal Technology",
     description:
-      "Applying rigorous evidence-handling standards and advanced analytics to the legal sector. Building proprietary tools that support litigation, e-discovery, and trial counsel workflows with uncompromising accuracy.",
+      "An advanced AI research assistant built specifically for litigation and trial preparation. It applies prosecutorial precision to case law, enabling attorneys to find defensible precedents rapidly.",
     link: "https://trialcounsel.com",
+  },
+  {
+    title: "LitVille Music Studio",
+    category: "Creative Technology",
+    description:
+      "An AI-powered music studio platform providing advanced track separation, chord detection, and granular speed/pitch control for musicians and audio professionals.",
+    link: "https://litville.com",
   },
   {
     title: "FFOptimizer",
