@@ -1,5 +1,5 @@
 import { CapabilityIcon } from "@/components/CapabilityIcon";
-import { approachSteps, capabilities, site } from "@/lib/site";
+import { approachSteps, capabilities, portfolio, site } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -30,31 +30,30 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl">
-            {site.name} builds analysis tools and applications where scientific rigor meets
-            modern AI—from GRC and cybersecurity to music, sports, and beyond.
+            {site.description}
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#capabilities"
+              href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-500 shadow-sm"
             >
-              Explore capabilities
+              Schedule a Consultation
             </a>
             <a
-              href="#contact"
+              href="#portfolio"
               className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 shadow-sm"
             >
-              Start a conversation
+              View Our Labs
             </a>
           </div>
 
           <dl className="mt-16 grid grid-cols-2 gap-8 border-t border-slate-200 pt-10 sm:grid-cols-4">
             {[
               { label: "Focus", value: "Research-grade" },
-              { label: "Domains", value: "Multi-sector" },
-              { label: "Methods", value: "AI + science" },
-              { label: "Delivery", value: "Tools & apps" },
+              { label: "Methodology", value: "Auditable & Proven" },
+              { label: "Expertise", value: "Regulatory & AI" },
+              { label: "Delivery", value: "Tools & Consulting" },
             ].map((item) => (
               <div key={item.label}>
                 <dt className="text-xs font-medium uppercase tracking-wider text-slate-500">
@@ -75,30 +74,25 @@ export default function Home() {
                 About Cyber Analyzer Labs, LLC
               </h2>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                We are a research-driven firm specializing in data analysis through artificial
-                intelligence and scientifically rigorous methods. Our work spans high-stakes
-                compliance and security programs as well as creative and analytical tools for
-                everyday practitioners.
+                We are a research-driven firm specializing in data analysis through artificial intelligence and scientifically rigorous methods. We offer both proprietary analytical tools and bespoke R&D consulting for complex enterprise challenges.
               </p>
             </div>
             <div className="space-y-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
               <p className="text-slate-700 leading-relaxed font-medium">
-                Led by a Doctor of Engineering (D.Eng.) with direct, hands-on research
-                experience, we bring academic depth to product delivery: reproducible methods,
-                clear assumptions, and software people actually use.
+                Led by Dr. Domingo J. Rivera, D.Eng., JD, MBA, our work combines enterprise-scale regulatory analytics, prosecutorial evidence-handling, and academic rigor.
               </p>
               <ul className="space-y-3 text-sm text-slate-600">
                 <li className="flex gap-3">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
-                  Governance, Risk & Compliance tooling across domains
+                  Experience leading GRC and analytical systems at enterprise scale (Meta)
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
-                  Cybersecurity analysis and security research
+                  Prosecutorial discipline ensuring findings withstand regulatory scrutiny
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
-                  General-purpose apps—from musicians to sports analytics
+                  Academic foundation via GWU School of Engineering (AI & Cyber Analytics)
                 </li>
               </ul>
             </div>
@@ -110,15 +104,14 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="max-w-2xl">
             <h2 className="font-serif text-3xl font-semibold text-slate-900 md:text-4xl">
-              Capabilities
+              Core Capabilities
             </h2>
             <p className="mt-4 text-slate-600 leading-relaxed">
-              One rigorous foundation, many applications. We partner on projects where quality of
-              analysis and clarity of outcomes matter.
+              We partner on projects where the quality of analysis, clarity of outcomes, and evidentiary standard of data truly matter.
             </p>
           </div>
 
-          <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-14 grid gap-6 md:grid-cols-3">
             {capabilities.map((cap) => (
               <li
                 key={cap.title}
@@ -135,11 +128,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="approach" className="scroll-mt-24 border-t border-slate-200 bg-slate-50 py-24">
+      <section id="portfolio" className="scroll-mt-24 border-t border-slate-200 bg-slate-50 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="max-w-2xl">
             <h2 className="font-serif text-3xl font-semibold text-slate-900 md:text-4xl">
-              Our approach
+              Labs & Portfolio
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Our methodological rigor is domain-portable. We build proprietary platforms and execute large-scale, data-driven consulting projects across diverse sectors.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {portfolio.map((item) => (
+              <div
+                key={item.title}
+                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <span className="text-xs font-bold uppercase tracking-wider text-sky-600 mb-2">
+                  {item.category}
+                </span>
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600 flex-grow">
+                  {item.description}
+                </p>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700"
+                  >
+                    View Project <span aria-hidden="true" className="ml-1">→</span>
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" className="scroll-mt-24 border-t border-slate-200 bg-white py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="max-w-2xl">
+            <h2 className="font-serif text-3xl font-semibold text-slate-900 md:text-4xl">
+              Our Methodology
             </h2>
             <p className="mt-4 text-slate-600 leading-relaxed">
               AI is powerful when it is accountable. We combine modern models with methods that
@@ -151,10 +184,10 @@ export default function Home() {
             {approachSteps.map((step) => (
               <li
                 key={step.step}
-                className="relative rounded-2xl border border-slate-200 bg-white p-8 pl-20 shadow-sm"
+                className="relative rounded-2xl border border-slate-200 bg-slate-50 p-8 pl-20 shadow-sm"
               >
                 <span
-                  className="absolute left-8 top-8 font-mono text-3xl font-bold text-sky-100"
+                  className="absolute left-8 top-8 font-mono text-3xl font-bold text-sky-200"
                   aria-hidden
                 >
                   {step.step}
@@ -173,18 +206,17 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-white pointer-events-none" />
             <div className="relative z-10">
               <h2 className="font-serif text-3xl font-semibold text-slate-900 md:text-4xl">
-                Let&apos;s work together
+                Ready to collaborate?
               </h2>
               <p className="mt-4 max-w-xl text-slate-600 leading-relaxed">
-                Whether you need a GRC assessment framework, a security research engagement, or a
-                specialized application—we welcome inquiries about new projects and collaborations.
+                Whether you need a bespoke GRC assessment framework, a security research engagement, or a specialized data application—we welcome inquiries about new projects.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
                   href={`mailto:${site.email}`}
                   className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-500 shadow-sm"
                 >
-                  {site.email}
+                  Contact our team
                 </a>
               </div>
             </div>

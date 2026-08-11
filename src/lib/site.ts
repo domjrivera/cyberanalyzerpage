@@ -2,7 +2,7 @@ export const site = {
   name: "Cyber Analyzer Labs, LLC",
   tagline: "Rigorous analysis. Intelligent systems. Real-world impact.",
   description:
-    "Research-driven AI and data analysis for governance, cybersecurity, creative tools, sports analytics, and beyond.",
+    "We build proprietary analysis tools and partner with organizations for bespoke R&D consulting—bringing scientific rigor to complex data challenges.",
   email: "contact@cyberanalyzer.com",
   url: "https://cyberanalyzer.com",
 } as const;
@@ -10,6 +10,7 @@ export const site = {
 export const navLinks = [
   { href: "#about", label: "About" },
   { href: "#capabilities", label: "Capabilities" },
+  { href: "#portfolio", label: "Labs & Portfolio" },
   { href: "#approach", label: "Approach" },
   { href: "#contact", label: "Contact" },
 ] as const;
@@ -18,38 +19,44 @@ export const capabilities = [
   {
     title: "Governance, Risk & Compliance",
     description:
-      "GRC analysis tools tailored to cybersecurity and other regulated domains—mapping controls, assessing risk postures, and turning policy into actionable insight.",
+      "Enterprise-scale GRC analysis. We map controls, assess risk postures, and synthesize massive federal datasets (e.g., EPA, OSHA, NRC) into actionable regulatory insights.",
     icon: "shield",
   },
   {
-    title: "Cybersecurity Research",
+    title: "Cybersecurity & Evidence Analytics",
     description:
-      "Threat modeling, security analytics, and evidence-based assessments grounded in direct research experience and scientific method.",
+      "Threat modeling and evidence-based assessments grounded in prosecutorial discipline. We build analytical systems that withstand scrutiny from regulators and skeptical reviewers.",
     icon: "lock",
   },
   {
-    title: "Cross-Domain Analysis",
+    title: "Bespoke R&D Consulting",
     description:
-      "The same rigorous frameworks apply wherever data matters: from compliance programs to operational research across industries.",
-    icon: "layers",
-  },
-  {
-    title: "Creative & General Applications",
-    description:
-      "Practical tools for musicians, creators, and everyday workflows—where thoughtful design meets solid engineering.",
-    icon: "music",
-  },
-  {
-    title: "Sports Analytics",
-    description:
-      "Performance modeling, statistical inference, and decision support for teams and analysts who need more than dashboards.",
-    icon: "chart",
-  },
-  {
-    title: "Custom Research & Development",
-    description:
-      "Partner on bespoke projects: novel methods, prototypes, and production systems built with doctoral-level depth and delivery focus.",
+      "Partner on complex, high-stakes projects. We bring doctoral-level depth to design novel methods, prototypes, and production systems tailored to your domain.",
     icon: "flask",
+  },
+] as const;
+
+export const portfolio = [
+  {
+    title: "Regulatory Modernization Analytics",
+    category: "Enterprise GRC & Safety",
+    description:
+      "Conducted a nationwide, multi-decade analysis of federal incident data (EPA RMP, OSHA, NRC) for a major industry association. Developed a rule-based, multi-class facility classifier to cleanly disambiguate sector-specific risk, providing the quantitative foundation for regulatory modernization advocacy.",
+    link: null,
+  },
+  {
+    title: "LitVille & TrialCounsel",
+    category: "Legal Technology",
+    description:
+      "Applying rigorous evidence-handling standards and advanced analytics to the legal sector. Building proprietary tools that support litigation, e-discovery, and trial counsel workflows with uncompromising accuracy.",
+    link: "https://trialcounsel.com",
+  },
+  {
+    title: "FFOptimizer",
+    category: "Sports Analytics",
+    description:
+      "Bringing predictive risk modeling and statistical inference to the sports domain. FFOptimizer delivers advanced decision support and performance modeling for competitive fantasy sports analysts.",
+    link: "https://ffoptimizer.com",
   },
 ] as const;
 
@@ -72,6 +79,6 @@ export const approachSteps = [
   {
     step: "04",
     title: "Iterate with impact",
-    body: "Measure results in the field, refine models and UX, and deliver outcomes that hold up under scrutiny.",
+    body: "Measure results in the field, refine models and UX, and deliver outcomes that hold up under evidentiary scrutiny.",
   },
 ] as const;
