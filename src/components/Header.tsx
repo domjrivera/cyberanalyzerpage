@@ -8,21 +8,21 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#0a0e14]/80 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link
           href="/"
-          className="group flex items-center gap-3 font-semibold tracking-tight text-white"
+          className="group flex items-center gap-3 font-semibold tracking-tight text-slate-900"
         >
           <img
             src="/logo-icon.png"
             alt=""
-            className="h-8 w-auto"
+            className="h-8 w-auto mix-blend-multiply"
             height={32}
             width={29}
           />
           <span className="hidden sm:inline">{site.name}</span>
-          <span className="sm:hidden">Cyber Analyzer</span>
+          <span className="sm:hidden">Cyber Analyzer Labs</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
@@ -30,7 +30,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-slate-400 transition-colors hover:text-cyan-300"
+              className="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600"
             >
               {link.label}
             </a>
@@ -39,14 +39,14 @@ export function Header() {
 
         <a
           href="#contact"
-          className="hidden rounded-full bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 ring-1 ring-cyan-400/30 transition hover:bg-cyan-500/20 md:inline-block"
+          className="hidden rounded-full bg-sky-50 px-4 py-2 text-sm font-medium text-sky-700 ring-1 ring-sky-600/20 transition hover:bg-sky-100 md:inline-block"
         >
           Get in touch
         </a>
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-slate-400 md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-slate-500 hover:text-slate-900 md:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
@@ -63,7 +63,7 @@ export function Header() {
 
       {open && (
         <nav
-          className="border-t border-white/5 bg-[#0a0e14] px-6 py-4 md:hidden"
+          className="border-t border-slate-200 bg-white px-6 py-4 md:hidden shadow-lg"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-3">
@@ -71,7 +71,7 @@ export function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block py-2 text-slate-300"
+                  className="block py-2 font-medium text-slate-600 hover:text-sky-600"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -81,7 +81,7 @@ export function Header() {
             <li>
               <a
                 href="#contact"
-                className="mt-2 block rounded-full bg-cyan-500/10 px-4 py-3 text-center text-cyan-300 ring-1 ring-cyan-400/30"
+                className="mt-2 block rounded-full bg-sky-50 px-4 py-3 text-center font-medium text-sky-700 ring-1 ring-sky-600/20 hover:bg-sky-100"
                 onClick={() => setOpen(false)}
               >
                 Get in touch

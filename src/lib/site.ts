@@ -1,5 +1,5 @@
 export const site = {
-  name: "Cyber Analyzer LLC",
+  name: "Cyber Analyzer Labs, LLC",
   tagline: "Rigorous analysis. Intelligent systems. Real-world impact.",
   description:
     "Research-driven AI and data analysis for governance, cybersecurity, creative tools, sports analytics, and beyond.",
