@@ -3,7 +3,7 @@ export const site = {
   tagline: "Rigorous analysis. Intelligent systems. Real-world impact.",
   description:
     "We build proprietary analysis tools and partner with organizations for bespoke R&D consulting—bringing scientific rigor to complex data challenges.",
-  email: "contact@cyberanalyzer.com",
+  email: "contact@cyberanalyzerlabs.com",
   url: "https://cyberanalyzer.com",
 } as const;
 
